@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gilroy";
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#container {
+  /* position: relative; */
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#top-bar {
+  width: 100vw;
+  /* border: 2px solid white; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+
+.logo > h1 {
+  color: white;
+  font-family: "Anurati";
+  font-size: 2em;
+}
+
+#navigation-bar > #active {
+  color: pink;
+}
+#navigation-bar > a {
+  color: whitesmoke;
+  font-weight: 500;
+  text-decoration: none;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+#navigation-bar > a:hover {
+  color: pink;
+}
+
+#content-section{
+  /* position: absolute; */
+  width: 100vw;
+  /* border: 2px solid white; */
+  /* color: aliceblue; */
+  padding: 3% 5%;
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-part{
+  width: 50%;
+  /* border: 2px solid white; */
+  padding: 3% 5%;
+}
+
+.left-part h1{
+  font-size: 3rem;
+  letter-spacing: 10px;
+  font-weight: 900;
+  font-family: "Anurati";
+  text-transform: uppercase;
+  color: whitesmoke;
+}
+
+.left-part p{
+  color: pink;
+  font-size: 1rem;
+  margin: 20px 0 50px 0;
+}
+
+.left-part > a{
+  outline: 2px solid pink;
+  padding: 10px 20px;
+  background-color: pink;
+  border-radius: 2px;
+  border: none;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  cursor: pointer;
+}
+.right-part{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#bottom-bar{
+  width: 100vw;
+  /* border: 2px solid white; */
+  padding: 3% 30px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+
+#bottom-bar > i{
+color: white;
+font-size: 1.5rem;
+}
